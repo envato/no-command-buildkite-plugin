@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+
+if [[ "$BUILDKITE_COMMAND" != "" ]]; then
+  echo "~~~ Please remove envato/no-command plugin if you wish to run the configured command"
+  exit 1
+fi
+
+echo "~~~ Skipping command hook"

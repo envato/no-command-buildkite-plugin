@@ -1,0 +1,11 @@
+services:
+  lint:
+    image: buildkite/plugin-linter
+    command: ["--id", "envato/no-command"]
+    volumes:
+      - ".:/plugin:ro"
+
+  tests:
+    image: buildkite/plugin-tester
+    volumes:
+      - ".:/plugin:ro"

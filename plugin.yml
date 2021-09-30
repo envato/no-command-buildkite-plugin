@@ -3,7 +3,5 @@ description: Overwrites the command hook so that it can be skipped
 author: https://github.com/envato/no-command-buildkite-plugin
 requirements: []
 configuration:
-  properties:
-    _:
-      type: string
+  properties: {}
   additionalProperties: false
